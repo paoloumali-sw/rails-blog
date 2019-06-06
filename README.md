@@ -30,7 +30,14 @@ FLUSH PRIVILEGES;
 
 - $ ``rails server``. Puma will serve app to something like: http://localhost:3000
 
+## Deploying to Heroku
+
+- $ ``gem install bundler``
+- First [download OpenSSL](https://bintray.com/oneclick/OpenKnapsack/download_file?file_path=x86%2Fopenssl-1.0.2j-x86-windows.tar.lzma). Next, extract the lzma download with 7Zip, and then extract the tar file to C:\openssl.
+- [download heroku cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+- $ heroku login
+- $ heroku apps:create {nameOfApp}
+
 ## Todos
 * How to run the test suite
 * Services (job queues, cache servers, search engines, etc.)
-* Deployment instructions
